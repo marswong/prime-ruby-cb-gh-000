@@ -7,12 +7,13 @@ def prime?(n)
     false
   else
     i = 5
+    result = true
     while i ** 2 < n
       if n % i == 0 || n % (i + 2) == 0
-        false
+        result = false
       end
       i += 6
     end
-    true
+    result
   end
 end
